@@ -1,0 +1,68 @@
+//
+
+default
+xkb_symbols "basic" {
+    include "de(basic)"
+    name[Group1]="Germany";
+};
+
+partial alphanumeric_keys modifier_keys 
+xkb_symbols "hacker_en" {
+    include "latin(type4)"
+    name[Group1]="USA";
+    key <TLDE>	{ [      less,asciicircum,      notsign,      notsign ]	};
+    key <AE01>	{ [         1,     exclam,  onesuperior,   exclamdown ]	};
+    key <AE02>	{ [         2,   quotedbl,  twosuperior,    oneeighth ]	};
+    key <AE03>	{ [         3,   EuroSign, threesuperior,    sterling ]	};
+    key <AE04>	{ [         4,     dollar,   onequarter,     currency ]	};
+    key <AE05>	{ [         5,    percent,      onehalf, threeeighths ]	};
+    key <AE06>	{ [         6,  ampersand,      notsign,  fiveeighths ]	};
+    key <AE07>	{ [         7,      slash,    slash, seveneighths ]	};
+    key <AE08>	{ [         8,  parenleft,  backslash,    trademark ]	};
+    key <AE09>	{ [         9, parenright, bracketright,    plusminus ]	};
+    key <AE10>	{ [         0,      equal,   braceright,       degree ]	};
+    key <AE11>	{ [   greater,   question,    backslash, questiondown ]	};
+    key <AE12>	{ [     acute,     grave, dead_acute,  dead_ogonek ]	};
+
+    key <AD01>	{ [         q,          Q,           at,  Greek_OMEGA ]	};
+    key <AD02>	{ [         w,          W                     ]	};
+    key <AD03>	{ [         e,          E,     EuroSign,     EuroSign ]	};
+    key <AD04>	{ [         r,          R,   numbersign,   registered ]	};
+    key <AD05>	{ [         t,          T                             ]	};
+    key <AD06>	{ [         z,          Z, asciitilde                 ]	};
+    key <AD07>	{ [         u,          U, less                       ]	};
+    key <AD08>	{ [         i,          I                             ]	};
+    key <AD09>	{ [         o,          O, numbersign                             ]	};
+    key <AD10>	{ [         p,          P                             ]	};
+    key <AD11>	{ [asciitilde, 		at]	};
+    key <AD12>	{ [      plus,   asterisk,   asciitilde               ]	};
+
+    key <AC01>	{ [         a,          A,         less               ]	};
+    key <AC02>	{ [         s,          S               ]	};
+    key <AC03>	{ [         d,          D,  bracketleft               ]	};
+    key <AC04>	{ [         f,          F, braceleft                  ]	};
+    key <AC05>	{ [         g,          G                             ]	};
+    key <AC06>	{ [         h,          H                             ]	};
+    key <AC07>	{ [         j,          J, percent                             ]	};
+    key <AC08>	{ [         k,          K, Escape, Escape             ]	};
+    key <AC09>	{ [         l,          L, braceleft, braceleft                             ]	};
+    key <AC10>	{ [ braceleft,bracketleft, dead_doubleacute ] };
+    key <AC11>	{ [braceright,bracketright , backslash, dead_caron]	};
+    key <BKSL>	{ [numbersign, apostrophe,   slash ]	};
+
+    key <LSGT>  { [       bar,  backslash, equal, equal 	] };
+    key <AB01>	{ [         y,          Y, greater              ]	};
+    key <AB02>	{ [         x,          X              ]	};
+    key <AB03>	{ [         c,          C, bracketright,    copyright ]	};
+    key <AB04>	{ [         v,          V, braceright ]	};
+    key <AB05>	{ [         b,          B ] };
+    key <AB06>	{ [         n,          N, equal ]	};
+    key <AB07>	{ [         m,          M, greater               ]	};
+    key <AB08>	{ [     comma,  semicolon ]	};
+    key <AB09>	{ [    period,      colon, braceright ]	};
+    key <AB10>	{ [     minus, underscore, bracketright ]	};
+
+    include "kpdl(comma)"
+
+};
+
