@@ -1,3 +1,5 @@
+Tested 2018 on Ubuntu 18.04
+
 **Developer friendly German + Russian keyboard layout, based on standard
  American layout**
 
