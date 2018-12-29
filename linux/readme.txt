@@ -5,13 +5,16 @@ Tested 2018 on Ubuntu 18.04
 
 Tested on 2016-06-13 - works with Ubuntu 14.04 and 16.04.
 
-November 2009-2016 - RUSSIAN
+2009-2016-2018 - RUSSIAN
 ----------------------------
 For russian keyboard extend the official ubuntu layout file
 
     sudo sh -c 'cat ./geekq_ru >> /usr/share/X11/xkb/symbols/ru'
 
 Since Ubuntu 14.04 run `sudo dpkg-reconfigure xkb-data` to reconfigure.
+
+This makes this layout available under `Russian (legacy)` for
+Keyboard > Layouts > Add
 
 July 2009-2016 - DEVELOPER
 --------------------------
