@@ -9,17 +9,7 @@ November 2009-2016 - RUSSIAN
 ----------------------------
 For russian keyboard extend the official ubuntu layout file
 
-    sudo sh -c 'cat ~/projects/keyboard-layouts/linux/replacement_ru >> /usr/share/X11/xkb/symbols/ru'
-
-Then remove the old 'Legacy' definition block
-
-    sudo vi /usr/share/X11/xkb/symbols/ru
-
-Remove the old block
-
-    xkb_symbols "legacy" {
-      ...
-    }
+    sudo sh -c 'cat ./geekq_ru >> /usr/share/X11/xkb/symbols/ru'
 
 Since Ubuntu 14.04 run `sudo dpkg-reconfigure xkb-data` to reconfigure.
 
