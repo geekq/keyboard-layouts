@@ -43,7 +43,7 @@ Very simple solution without much customization:
       key <LSGT> { [ dead_diaeresis, ssharp         ] };
 
 * run `sudo dpkg-reconfigure xkb-data` to reconfigure
-
+* log out and log in again
 
 
 
