@@ -18,6 +18,11 @@ Keyboard > Layouts > Add
 
 July 2009-2016 - DEVELOPER
 --------------------------
+As a developer in Germany the challenge is
+* to have german specific characters ä ö ü ß in addition to basic latin set
+* to have all the different types of parenthesis and special characters
+  easily available at the same time
+
 Very simple solution without much customization:
 
 * just use the American keyboard layout - it is pretty good for coding. For Ruby too.
@@ -25,19 +30,19 @@ Very simple solution without much customization:
 * modify the LSGT key (the key to the right of the left shift key on an
   European keyboard) to produce a dead umlaut and sharp S
 
-    sudo cp /usr/share/X11/xkb/symbols/us /usr/share/X11/xkb/symbols/us.bak
-    sudo vi /usr/share/X11/xkb/symbols/us
+      sudo cp /usr/share/X11/xkb/symbols/us /usr/share/X11/xkb/symbols/us.bak
+      sudo vi /usr/share/X11/xkb/symbols/us
 
-at the end of the following block (before the closing brace)
+  at the end of the following block (before the closing brace)
 
-    xkb_symbols "basic" {
-    }
+      xkb_symbols "basic" {
+      }
 
-append this
+  append this
 
-    key <LSGT> { [ dead_diaeresis, ssharp         ] };
+      key <LSGT> { [ dead_diaeresis, ssharp         ] };
 
-Since Ubuntu 14.04 run `sudo dpkg-reconfigure xkb-data` to reconfigure.
+* run `sudo dpkg-reconfigure xkb-data` to reconfigure
 
 
 
