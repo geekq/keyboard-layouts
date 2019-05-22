@@ -1,23 +1,10 @@
-Tested 2018 on Ubuntu 18.04
+Tested 2019 on Ubuntu 18.04, also works on 16.04
 
 **Developer friendly German + Russian keyboard layout, based on standard
  American layout**
 
-Tested on 2016-06-13 - works with Ubuntu 14.04 and 16.04.
-
-2009-2016-2018 - RUSSIAN
-----------------------------
-For russian keyboard extend the official ubuntu layout file
-
-    sudo sh -c 'cat ./geekq_ru >> /usr/share/X11/xkb/symbols/ru'
-
-Since Ubuntu 14.04 run `sudo dpkg-reconfigure xkb-data` to reconfigure.
-
-This makes this layout available under `Russian (legacy)` for
-Keyboard > Layouts > Add
-
-July 2009-2016 - DEVELOPER
---------------------------
+GERMAN, DEVELOPER
+-----------------
 As a developer in Germany the challenge is
 * to have german specific characters ä ö ü ß in addition to basic latin set
 * to have all the different types of parenthesis and special characters
@@ -45,6 +32,24 @@ Very simple solution without much customization:
 * run `sudo dpkg-reconfigure xkb-data` to reconfigure
 * log out and log in again
 
+
+RUSSIAN, LATIN BASED
+--------------------
+As a developer working primarily with latin letters (English, German),
+it is more convinient to have cyrillic letters on the same places as
+latin. Home row: `АСДФ ЙКЛЁ` similar to `ASDF JKLÖ` instead of `ФЫВА ОЛДЖ`.
+
+For russian keyboard patch the official Ubuntu layout file
+
+    sudo cp /usr/share/X11/xkb/symbols/ru /usr/share/X11/xkb/symbols/ru.bak
+    sudo vi /usr/share/X11/xkb/symbols/ru
+
+* replace the `xkb_symbols "legacy" {` block by the content of `geekq_ru` file.
+* run `sudo dpkg-reconfigure xkb-data` to reconfigure
+* log out and log in again
+
+This makes this layout available under `Russian (legacy)` for
+Keyboard > Layouts > Add
 
 
 OLD, OBSOLETE (pre 2010 configuration)
