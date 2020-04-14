@@ -1,5 +1,8 @@
-//
-
+// Patched by geekQ.
+// Puts cyrillic letters on the same places as latin - good for e.g. developer
+// working primarily with latin letters (English, German).
+// Home row: АСДФ ЙКЛЁ similar to ASDF JKLÖ instead of ФЫВА ОЛДЖ.
+// Note: do not forget to remove the original `xkb_symbols "legacy" {` block
 partial alphanumeric_keys
 xkb_symbols "legacy" {
     include "ru(common)"

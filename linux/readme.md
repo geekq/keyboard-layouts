@@ -1,4 +1,4 @@
-Tested 2019 on Ubuntu 18.04, also works on 16.04
+Tested 2020 on Ubuntu 20.04, 18.04, also works on 16.04
 
 **Developer friendly German + Russian keyboard layout, based on standard
  American layout**
@@ -42,6 +42,8 @@ latin. Home row: `АСДФ ЙКЛЁ` similar to `ASDF JKLÖ` instead of `ФЫВ�
 For russian keyboard patch the official Ubuntu layout file
 
     sudo cp /usr/share/X11/xkb/symbols/ru /usr/share/X11/xkb/symbols/ru.bak
+    curl https://raw.githubusercontent.com/geekq/keyboard-layouts/master/linux/geekq_ru | \
+      sudo tee -a /usr/share/X11/xkb/symbols/ru
     sudo vi /usr/share/X11/xkb/symbols/ru
 
 * replace the `xkb_symbols "legacy" {` block by the content of `geekq_ru` file.
