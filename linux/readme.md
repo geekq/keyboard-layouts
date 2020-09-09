@@ -46,7 +46,7 @@ For russian keyboard patch the official Ubuntu layout file
       sudo tee -a /usr/share/X11/xkb/symbols/ru
     sudo vi /usr/share/X11/xkb/symbols/ru
 
-* replace the `xkb_symbols "legacy" {` block by the content of `geekq_ru` file.
+* now remove the first `xkb_symbols "legacy" {` block, a new one (from this repository) was added at the end of the file
 * run `sudo dpkg-reconfigure xkb-data` to reconfigure
 * log out and log in again
 
